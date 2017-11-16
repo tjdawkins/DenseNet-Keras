@@ -44,4 +44,4 @@ with open('resources/classes.txt', 'r') as list_:
     for line in list_:
         classes.append(line.rstrip('\n'))
 
-print 'Prediction: '+str(classes[np.argmax(out)])
+print('Prediction: %s' % str(classes[np.argmax(out)]))
